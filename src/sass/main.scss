@@ -1,12 +1,43 @@
-* {
+*,
+::before,
+::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
-body{
-    background-color: #334;
+body {
+	background-color: #334;
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+ul {
+	margin-left: 50px;
+}
+
+.center-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		text-align: center;
+		font-size: 7rem;
+		color: rgb(115, 115, 136);
+	}
+	h3 {
+		font-size: 4rem;
+	}
+	p {
+		width: 400px;
+		font-size: 2rem;
+		text-align: center;
+	}
 }
