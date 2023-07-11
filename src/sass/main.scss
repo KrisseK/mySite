@@ -12,32 +12,50 @@ html {
 body {
 	background-color: #334;
 	font-family: "Poppins", sans-serif;
-	color: #fff;
-}
-a {
-	text-decoration: none;
-	color: #fff;
-}
-ul {
-	margin-left: 50px;
-}
-
-.center-info {
+	color: #5a5252;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	h2 {
-		text-align: center;
-		font-size: 7rem;
-		color: rgb(115, 115, 136);
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vh;
+	height: 100vh;
+	.card {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20%;
+		height: 20%;
+		background-color: #615b5b;
+		margin: 5px 10px;
+		p {
+			color: #fff;
+			font-size: 5rem;
+		}
+		.card-back {
+			position: absolute;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			transform: rotateX(180deg);
+			p {
+				font-size: 2rem;
+				color: #fff;
+			}
+		}
 	}
-	h3 {
-		font-size: 4rem;
+}
+.card:hover {
+	.question-mark{
+		display: none;
 	}
-	p {
-		width: 400px;
-		font-size: 2rem;
-		text-align: center;
+	.card-back {
+		display: flex;
+		transform: rotateX(0deg);
 	}
 }
